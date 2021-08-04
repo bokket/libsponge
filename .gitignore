@@ -1,0 +1,12 @@
+*.a
+*.o
+/.vscode
+/.idea
+/build
+/cmake-build-debug
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
