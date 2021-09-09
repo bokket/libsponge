@@ -3,15 +3,14 @@
 
 #include "byte_stream.hh"
 
-#include <map>
-#include <list>
-#include <tuple>
-#include <deque>
-#include <queue>
-#include <unordered_map>
-
 #include <cstdint>
+#include <deque>
+#include <list>
+#include <map>
+#include <queue>
 #include <string>
+#include <tuple>
+#include <unordered_map>
 
 //! \brief A class that assembles a series of excerpts from a byte stream (possibly out of order,
 //! possibly overlapping) into an in-order byte stream.
@@ -20,12 +19,12 @@
 class StreamReassembler {
   private:
     // Your code here -- add private members as necessary.
-    //std::map<char,bool> _stream;
-    //std::deque<char> _stream;
-    //std::deque<bool> _state;
-    std::deque<std::pair<char,bool>> _stream;
+    // std::map<char,bool> _stream;
+    // std::deque<char> _stream;
+    // std::deque<bool> _state;
+    std::deque<std::pair<char, bool>> _stream;
 
-    //std::list<std::pair<char,bool>> _stream;
+    // std::list<std::pair<char,bool>> _stream;
 
     bool _is_eof;
 
